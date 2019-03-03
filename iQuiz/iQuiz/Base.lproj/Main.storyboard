@@ -196,6 +196,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="submitAnswer:" destination="Qvo-Vj-Pbp" eventType="touchUpInside" id="D0w-Cs-3cU"/>
+                                    <segue destination="1Kf-jc-4Av" kind="presentation" identifier="toAnswer" id="0Ca-wN-Z1Q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -270,6 +271,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextPressed:" destination="1Kf-jc-4Av" eventType="touchUpInside" id="iwQ-Kd-UOf"/>
+                                    <segue destination="JCe-P5-ZjD" kind="presentation" identifier="toResult" id="Znk-3f-LFd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVU-UM-QUj">

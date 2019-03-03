@@ -46,6 +46,17 @@ class QuestionViewController: UIViewController {
 		
 	}
 	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		let answerView = segue.destination as! AnswerViewController
+		answerView.quizzes = quizzes
+		answerView.categoryIndex = categoryIndex
+		
+		answerView.currentQuestionIndex = currentQuestionIndex
+		answerView.selectedAnswer = selectedAnswer
+		answerView.currentAnswered = currentAnswered
+		answerView.currentCorrect = currentCorrect
+	}
+	
 	// Interaction Functions
 	@IBAction func buttonPressed (_ sender : UIButton) {
 		updateAnswerSelection(sender.tag)
@@ -62,17 +73,6 @@ class QuestionViewController: UIViewController {
 			// perform segue
 			performSegue(withIdentifier: "toAnswer", sender: self)
 		}
-	}
-	
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		let answerView = segue.destination as! AnswerViewController
-		answerView.quizzes = quizzes
-		answerView.categoryIndex = categoryIndex
-		
-		answerView.currentQuestionIndex = currentQuestionIndex
-		answerView.selectedAnswer = selectedAnswer
-		answerView.currentAnswered = currentAnswered
-		answerView.currentCorrect = currentCorrect
 	}
 	
 	override func viewDidLoad() {
