@@ -352,7 +352,7 @@
                         <outlet property="ResultLabel" destination="cIr-eu-9x9" id="qu3-pL-55i"/>
                         <outlet property="UserAnswerLabel" destination="5eX-dq-Q6G" id="7Rn-J1-TNe"/>
                         <segue destination="Qvo-Vj-Pbp" kind="presentation" identifier="toQuestion" id="CqW-9F-z6b"/>
-                        <segue destination="JCe-P5-ZjD" kind="presentation" identifier="toResult" id="zR3-fK-S89"/>
+                        <segue destination="JCe-P5-ZjD" kind="presentation" identifier="toResults" id="zR3-fK-S89"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xRG-3J-hHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
