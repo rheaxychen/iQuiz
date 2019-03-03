@@ -57,16 +57,16 @@ class AnswerViewController: UIViewController {
 		currentQuestionIndex += 1
 		currentAnswered += 1
 		if selectedAnswer == answerIndex {
-			resultLabel.text = "You're right!"
-			resultLabel.textColor = #colorLiteral(red: 0.3210366907, green: 0.6404753093, blue: 0.1294117647, alpha: 1)
+			ResultLabel.text = "You're right!"
+			ResultLabel.textColor = #colorLiteral(red: 0.3210366907, green: 0.6404753093, blue: 0.1294117647, alpha: 1)
 			currentCorrect += 1
 		} else {
-			resultLabel.text = "Incorrect answer!"
-			resultLabel.textColor = UIColor.red
+			ResultLabel.text = "Incorrect answer!"
+			ResultLabel.textColor = UIColor.red
 		}
 		
 		if currentQuestionIndex == quizzes[categoryIndex].questions.count {
-			nextButton.setTitle("Check your results", for: .normal)
+			NextButton.setTitle("Check your results", for: .normal)
 			completedQuiz = true
 		}
 		

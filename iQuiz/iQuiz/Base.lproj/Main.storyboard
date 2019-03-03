@@ -79,9 +79,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="quizDesc" destination="Kil-d5-Ax7" id="Fkd-7Q-t9u"/>
+                                            <outlet property="QuizDesc" destination="Kil-d5-Ax7" id="drE-we-lgc"/>
+                                            <outlet property="QuizImg" destination="fOS-H4-YNu" id="laf-tz-zeJ"/>
+                                            <outlet property="QuizTitle" destination="6J3-tQ-1bJ" id="WpL-9o-cHc"/>
                                             <outlet property="quizImg" destination="fOS-H4-YNu" id="tWa-HR-D6i"/>
-                                            <outlet property="quizName" destination="6J3-tQ-1bJ" id="95p-YS-9Zu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -247,7 +248,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="1MK-cp-p73"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" red="0.32156862749999998" green="0.63921568630000003" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -258,7 +259,7 @@
                                     <constraint firstAttribute="height" constant="42" id="gQn-PL-lRZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Next Question &gt;&gt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -284,8 +285,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="e2s-zh-jms"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.018645260483026505" green="0.47766226530075073" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer chosen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eX-dq-Q6G">
@@ -298,16 +299,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e20-vw-U9x">
-                                <rect key="frame" x="16" y="300" width="343" height="32"/>
+                                <rect key="frame" x="16" y="348" width="343" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="5F0-Kf-tgG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.32359403371810913" green="0.6405414342880249" blue="0.1274854838848114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggy-YO-ZbD">
-                                <rect key="frame" x="16" y="336" width="343" height="36"/>
+                                <rect key="frame" x="16" y="384" width="343" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="jy6-yY-Bcj"/>
                                 </constraints>
@@ -324,7 +325,7 @@
                             <constraint firstItem="u9g-CT-sFC" firstAttribute="trailing" secondItem="e20-vw-U9x" secondAttribute="trailing" constant="16" id="DMc-Gn-4JW"/>
                             <constraint firstItem="5eX-dq-Q6G" firstAttribute="top" secondItem="B0k-uU-i29" secondAttribute="bottom" constant="4" id="GyY-Yc-Rts"/>
                             <constraint firstItem="u9g-CT-sFC" firstAttribute="bottom" secondItem="dQV-TE-4ph" secondAttribute="bottom" constant="36" id="Hvb-b5-OLU"/>
-                            <constraint firstItem="e20-vw-U9x" firstAttribute="top" secondItem="5eX-dq-Q6G" secondAttribute="bottom" constant="24" id="JBy-oL-x6Z"/>
+                            <constraint firstItem="e20-vw-U9x" firstAttribute="top" secondItem="5eX-dq-Q6G" secondAttribute="bottom" constant="72" id="JBy-oL-x6Z"/>
                             <constraint firstItem="mVU-UM-QUj" firstAttribute="top" secondItem="cIr-eu-9x9" secondAttribute="bottom" constant="4" id="KcG-3D-Try"/>
                             <constraint firstItem="u9g-CT-sFC" firstAttribute="trailing" secondItem="mVU-UM-QUj" secondAttribute="trailing" constant="16" id="Njt-2K-nKK"/>
                             <constraint firstItem="B0k-uU-i29" firstAttribute="top" secondItem="mVU-UM-QUj" secondAttribute="bottom" constant="36" id="TaL-M0-bza"/>
@@ -344,9 +345,9 @@
                     </view>
                     <connections>
                         <outlet property="CorrectAnswerLabel" destination="Ggy-YO-ZbD" id="clH-kq-y5g"/>
-                        <outlet property="NextButton" destination="dQV-TE-4ph" id="GJz-uD-aRN"/>
+                        <outlet property="NextButton" destination="dQV-TE-4ph" id="cLU-rh-8WQ"/>
                         <outlet property="QuestionLabel" destination="mVU-UM-QUj" id="vVm-FA-f17"/>
-                        <outlet property="ResultLabel" destination="cIr-eu-9x9" id="dL0-gp-Cof"/>
+                        <outlet property="ResultLabel" destination="cIr-eu-9x9" id="qu3-pL-55i"/>
                         <outlet property="UserAnswerLabel" destination="5eX-dq-Q6G" id="7Rn-J1-TNe"/>
                         <outlet property="correctAnswerLabel" destination="Ggy-YO-ZbD" id="5yS-W9-qvB"/>
                         <outlet property="nextButton" destination="dQV-TE-4ph" id="pCk-Lo-ime"/>
@@ -386,26 +387,26 @@
                                     <action selector="closeQuizPressed:" destination="JCe-P5-ZjD" eventType="touchUpInside" id="Sax-t3-ygZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice try!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVG-zd-P66">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not bad!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVG-zd-P66">
                                 <rect key="frame" x="16" y="84" width="343" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="hQt-xr-Rsz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your final score was" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ets-tp-2SJ">
-                                <rect key="frame" x="16" y="192" width="343" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your final score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ets-tp-2SJ">
+                                <rect key="frame" x="16" y="292" width="343" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Bas-c7-Ad2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.018645260479999998" green="0.4776622653" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 out of 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCT-hj-Nwf">
-                                <rect key="frame" x="16" y="232" width="343" height="42"/>
+                                <rect key="frame" x="16" y="332" width="343" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="6RU-Rj-kdO"/>
                                 </constraints>
@@ -425,13 +426,15 @@
                             <constraint firstItem="ets-tp-2SJ" firstAttribute="leading" secondItem="qcm-Wz-iMr" secondAttribute="leading" constant="16" id="YSu-OB-HGL"/>
                             <constraint firstItem="qcm-Wz-iMr" firstAttribute="bottom" secondItem="MZz-nP-tUW" secondAttribute="bottom" constant="36" id="Ylc-Et-J5k"/>
                             <constraint firstItem="nCT-hj-Nwf" firstAttribute="top" secondItem="ets-tp-2SJ" secondAttribute="bottom" constant="8" id="afO-8u-MKR"/>
-                            <constraint firstItem="ets-tp-2SJ" firstAttribute="top" secondItem="tVG-zd-P66" secondAttribute="bottom" constant="64" id="azX-MG-7K4"/>
+                            <constraint firstItem="ets-tp-2SJ" firstAttribute="top" secondItem="tVG-zd-P66" secondAttribute="bottom" constant="164" id="azX-MG-7K4"/>
                             <constraint firstItem="qcm-Wz-iMr" firstAttribute="trailing" secondItem="nCT-hj-Nwf" secondAttribute="trailing" constant="16" id="dgc-CT-Bkx"/>
                             <constraint firstItem="MZz-nP-tUW" firstAttribute="leading" secondItem="qcm-Wz-iMr" secondAttribute="leading" constant="16" id="wvH-Dk-WQ7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qcm-Wz-iMr"/>
                     </view>
                     <connections>
+                        <outlet property="FeedbackMsg" destination="tVG-zd-P66" id="G3h-ub-fsb"/>
+                        <outlet property="FinalScoreLabel" destination="nCT-hj-Nwf" id="0fM-hs-fA4"/>
                         <outlet property="finalScoreLabel" destination="nCT-hj-Nwf" id="hdK-y1-TN6"/>
                         <outlet property="msgLabel" destination="tVG-zd-P66" id="bWv-58-mmX"/>
                     </connections>

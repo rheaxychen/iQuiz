@@ -7,12 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 class ResultsViewController: UIViewController {
 	// UI Components
-	@IBOutlet weak var msgLabel: UILabel!
-	@IBOutlet weak var finalScoreLabel: UILabel!
-	
+	@IBOutlet weak var FeedbackMsg: UILabel!
+	@IBOutlet weak var FinalScoreLabel: UILabel!
 	
 	// Variables
 	var questionCount : Int = 0
@@ -25,14 +25,14 @@ class ResultsViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		finalScoreLabel.text = "\(finalCorrect) of \(questionCount)"
+		FinalScoreLabel.text = "\(finalCorrect) of \(questionCount)"
 		var resultMsg : String = ""
 		switch questionCount - finalCorrect {
-		case 0: resultMsg = "Perfect Score!"
-		case 1: resultMsg = "So close!!"
-		default: resultMsg = "Nice try..."
+		case 0: resultMsg = "Perfect!"
+		case 1: resultMsg = "Almost!!!"
+		default: resultMsg = "Not bad!"
 		}
 		
-		msgLabel.text = resultMsg
+		FeedbackMsg.text = resultMsg
 	}
 }
