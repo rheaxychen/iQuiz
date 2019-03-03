@@ -31,37 +31,37 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HeP-l3-o2X">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="129" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HeP-l3-o2X">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="8bM-j8-ZH6">
-                                    <rect key="frame" x="0.0" y="101" width="375" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="157" width="375" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="quizCatCell" rowHeight="73" id="aSM-FJ-rlf" customClass="MainCell" customModule="iQuiz">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="quizCatCell" rowHeight="129" id="aSM-FJ-rlf" customClass="MainCell" customModule="iQuiz">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aSM-FJ-rlf" id="9RJ-XD-vdg">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="128.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fOS-H4-YNu">
-                                                    <rect key="frame" x="15" y="6.5" width="60" height="60"/>
+                                                    <rect key="frame" x="15" y="34.5" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="NWB-GU-Qva"/>
                                                         <constraint firstAttribute="height" constant="60" id="VbO-EE-opw"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6J3-tQ-1bJ">
-                                                    <rect key="frame" x="87" y="19" width="239" height="21"/>
+                                                    <rect key="frame" x="87" y="41" width="239" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short description about the quiz" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Kil-d5-Ax7">
-                                                    <rect key="frame" x="87" y="41" width="239" height="17"/>
+                                                    <rect key="frame" x="87" y="70" width="239" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -70,11 +70,11 @@
                                             <constraints>
                                                 <constraint firstItem="6J3-tQ-1bJ" firstAttribute="leading" secondItem="fOS-H4-YNu" secondAttribute="trailing" constant="12" id="6Ap-Ca-NvU"/>
                                                 <constraint firstItem="fOS-H4-YNu" firstAttribute="leading" secondItem="9RJ-XD-vdg" secondAttribute="leading" constant="15" id="DgF-Zk-YLp"/>
-                                                <constraint firstItem="Kil-d5-Ax7" firstAttribute="top" secondItem="6J3-tQ-1bJ" secondAttribute="bottom" constant="1" id="LjZ-4T-4JY"/>
                                                 <constraint firstItem="fOS-H4-YNu" firstAttribute="centerY" secondItem="9RJ-XD-vdg" secondAttribute="centerY" id="Rnq-5R-ztW"/>
                                                 <constraint firstItem="Kil-d5-Ax7" firstAttribute="leading" secondItem="fOS-H4-YNu" secondAttribute="trailing" constant="12" id="bUO-CZ-Fbm"/>
+                                                <constraint firstItem="Kil-d5-Ax7" firstAttribute="top" secondItem="6J3-tQ-1bJ" secondAttribute="bottom" constant="8" id="bkO-Zj-kqc"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Kil-d5-Ax7" secondAttribute="trailing" constant="8" id="niQ-dP-c5A"/>
-                                                <constraint firstItem="6J3-tQ-1bJ" firstAttribute="top" secondItem="9RJ-XD-vdg" secondAttribute="topMargin" constant="8" id="sN0-d1-h0F"/>
+                                                <constraint firstItem="6J3-tQ-1bJ" firstAttribute="top" secondItem="9RJ-XD-vdg" secondAttribute="topMargin" constant="30" id="sN0-d1-h0F"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="6J3-tQ-1bJ" secondAttribute="trailing" constant="8" id="wGB-ZQ-vQG"/>
                                             </constraints>
                                         </tableViewCellContentView>

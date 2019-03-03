@@ -13,13 +13,15 @@ class Quiz {
 	init(title: String, desc: String, questions: [QuestionClass]) {
 		self.title = title
 		self.desc = desc
-		self.img = #imageLiteral(resourceName: "marvel.jpg")
+//		self.img = [#imageLiteral(resourceName: "science.jpg"),#imageLiteral(resourceName: "marvel.jpg"),#imageLiteral(resourceName: "math.jpg")]
+		self.img = #imageLiteral(resourceName: "math.jpg")
 		self.questions = questions
 	}
 	
 	var title = ""
 	var desc = ""
 	var img = UIImage()
+//	var img = [UIImage]()
 	var questions : [QuestionClass] = []
 }
 

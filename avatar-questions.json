@@ -1,0 +1,71 @@
+[
+    { "title":"Avatar: The Last Airbender",
+      "desc":"I believe Aang can save the world!",
+      "questions":[
+        {
+          "text":"What is the name of the earthbender who appears in the opening introduction of every episode of \"Avatar: The Last Airbender\"?",
+          "answer":"1",
+          "answers":[
+            "Sud",
+            "Roku",
+            "Pakku",
+            "Azula"
+          ]
+        },
+        {
+          "text":"What is the name given to the brainwashed lady whose responsibility is to take care of team Avatar?",
+          "answer":"3",
+          "answers":[
+            "Dai Lee",
+            "Appa",
+            "Joo Dee",
+            "Azula"
+          ]
+        },
+        {
+          "text":"How many elements can Toph bend?",
+          "answer":"2",
+          "answers":[
+            "Zero",
+            "One",
+            "Two",
+            "Four: the avatar?"
+          ]
+        }
+      ]
+    },
+    { "title":"Avatar: The Legend of Korra", "desc": "Avengers, Assemble!",
+      "questions":[
+        {
+          "text":"Who is one of the richest men in Republic City?",
+          "answer":"1",
+          "answers":[
+            "Hiroshi Sato",
+            "Cabbage Corp. Man",
+            "Tahno",
+            "Councilman Tarrlok"
+          ]
+        },
+        {
+          "text":"Who used to be Tenzin's girlfriend?",
+          "answer":"2",
+          "answers":[
+            "Tony Stark",
+            "Lin Bei Fong",
+            "Hiroshi Sato",
+            "Ikki"
+          ]
+        },
+        {
+          "text":"Who is the bloodbenders in the show?",
+          "answer":"4",
+          "answers":[
+            "Katara",
+            "Tenzin",
+            "Asami",
+            "Yukone"
+          ]
+        }
+      ]
+    }
+]
