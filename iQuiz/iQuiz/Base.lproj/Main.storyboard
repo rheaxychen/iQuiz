@@ -83,6 +83,7 @@
                                             <outlet property="QuizImg" destination="fOS-H4-YNu" id="laf-tz-zeJ"/>
                                             <outlet property="QuizTitle" destination="6J3-tQ-1bJ" id="WpL-9o-cHc"/>
                                             <outlet property="quizImg" destination="fOS-H4-YNu" id="tWa-HR-D6i"/>
+                                            <segue destination="Qvo-Vj-Pbp" kind="presentation" id="ZuL-25-1TC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -358,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xRG-3J-hHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="134"/>
+            <point key="canvasLocation" x="1887" y="134"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="p58-ou-qRF">
@@ -385,6 +386,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="closeQuizPressed:" destination="JCe-P5-ZjD" eventType="touchUpInside" id="Sax-t3-ygZ"/>
+                                    <segue destination="IQX-jp-tmg" kind="presentation" id="pg5-Ok-hlS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not bad!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVG-zd-P66">
@@ -441,7 +443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdl-QJ-aIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2598" y="134"/>
+            <point key="canvasLocation" x="2681" y="134"/>
         </scene>
     </scenes>
 </document>

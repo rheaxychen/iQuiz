@@ -21,6 +21,7 @@
 		99A4FE84222B5174000DD280 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4FE83222B5174000DD280 /* Question.swift */; };
 		99A4FE86222B517B000DD280 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4FE85222B517B000DD280 /* MainCell.swift */; };
 		99A4FE8B222B5767000DD280 /* marvel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99A4FE8A222B5767000DD280 /* marvel.jpg */; };
+		99A4FE8D222B71EB000DD280 /* Reachibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4FE8C222B71EB000DD280 /* Reachibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		99A4FE83222B5174000DD280 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		99A4FE85222B517B000DD280 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		99A4FE8A222B5767000DD280 /* marvel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marvel.jpg; sourceTree = "<group>"; };
+		99A4FE8C222B71EB000DD280 /* Reachibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachibility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				99509AEE2228737900691E4E /* LaunchScreen.storyboard */,
 				99509AF12228737900691E4E /* Info.plist */,
 				99A4FE74222B4200000DD280 /* Question View Controller.swift */,
+				99A4FE8C222B71EB000DD280 /* Reachibility.swift */,
 				99A4FE76222B4236000DD280 /* Answer View Controller.swift */,
 				99A4FE78222B426C000DD280 /* Results View Controller.swift */,
 			);
@@ -196,6 +199,7 @@
 				99509AE62228737500691E4E /* AppDelegate.swift in Sources */,
 				99A4FE77222B4236000DD280 /* Answer View Controller.swift in Sources */,
 				99A4FE75222B4200000DD280 /* Question View Controller.swift in Sources */,
+				99A4FE8D222B71EB000DD280 /* Reachibility.swift in Sources */,
 				99A4FE86222B517B000DD280 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

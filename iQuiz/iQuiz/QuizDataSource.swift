@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SystemConfiguration
 
 class QuizDataSource : NSObject, UITableViewDataSource
 {
@@ -24,9 +25,9 @@ class QuizDataSource : NSObject, UITableViewDataSource
 		let cell = tableView.dequeueReusableCell(withIdentifier: "quizCatCell") as! MainCell
 		
 		let currData = data[indexPath.row]
-		cell.quizName.text = currData.title
-		cell.quizDesc.text = currData.desc
-		cell.quizImg.image = currData.img
+		cell.QuizTitle.text = currData.title
+		cell.QuizDesc.text = currData.desc
+		cell.QuizImg.image = currData.img
 		
 		return cell
 	}

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SystemConfiguration
 
 struct Category: Codable {
 	let title: String
@@ -49,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate {
 	}
 	
 	@IBAction func settingsTapped(_ sender: Any) {
-		let alert = UIAlertController(title: "Settings", message: "Check from another URL", preferredStyle: .alert)
+		let alert = UIAlertController(title: "Settings", message: "Check from your own URL", preferredStyle: .alert)
 		// Add Text Field
 		alert.addTextField { (textField) in textField.placeholder = "Data URL" }
 		alert.addAction(UIAlertAction(title: "Check now", style: .default, handler: { [weak alert] (_) in
