@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import UIKit
+
+class QuestionClass {
+	init(text: String, answer: String, answers: [String]) {
+		self.text = text
+		self.answer = answer
+		self.answers = answers
+	}
+	
+	var text = ""
+	var answer = ""
+	var answers : [String] = []
+}

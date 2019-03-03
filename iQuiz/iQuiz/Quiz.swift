@@ -7,3 +7,40 @@
 //
 
 import Foundation
+import UIKit
+
+class Quiz {
+	init(title: String, desc: String, questions: [QuestionClass]) {
+		self.title = title
+		self.desc = desc
+		self.img = #imageLiteral(resourceName: "marvel.jpg")
+		self.questions = questions
+	}
+	
+	var title = ""
+	var desc = ""
+	var img = UIImage()
+	var questions : [QuestionClass] = []
+}
+
+protocol QuizRepository {
+	func getQuizzes() -> [Quiz]
+}
+
+class SimpleQuizRepository : QuizRepository {
+	private static var _repo : QuizRepository? = nil
+	
+	static var theInstance : QuizRepository {
+		get {
+			if _repo == nil { _repo = SimpleQuizRepository() }
+			return _repo!
+		}
+	}
+	
+	let localTestingData : [Quiz] = []
+	
+	
+	func getQuizzes() -> [Quiz] {
+		return localTestingData
+	}
+}

@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+class MainCell: UITableViewCell {
+	@IBOutlet weak var quizTitle: UILabel!
+	@IBOutlet weak var quizDesc: UILabel!
+	@IBOutlet weak var quizImg: UIImageView!
+}

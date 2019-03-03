@@ -20,6 +20,7 @@
 		99A4FE82222B516D000DD280 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4FE81222B516D000DD280 /* Quiz.swift */; };
 		99A4FE84222B5174000DD280 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4FE83222B5174000DD280 /* Question.swift */; };
 		99A4FE86222B517B000DD280 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4FE85222B517B000DD280 /* MainCell.swift */; };
+		99A4FE8B222B5767000DD280 /* marvel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99A4FE8A222B5767000DD280 /* marvel.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		99A4FE81222B516D000DD280 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		99A4FE83222B5174000DD280 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		99A4FE85222B517B000DD280 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		99A4FE8A222B5767000DD280 /* marvel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marvel.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		99509AE42228737500691E4E /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				99A4FE87222B5490000DD280 /* resources */,
 				99509AE52228737500691E4E /* AppDelegate.swift */,
 				99509AE72228737500691E4E /* ViewController.swift */,
 				99509AE92228737500691E4E /* Main.storyboard */,
@@ -83,9 +86,33 @@
 				99A4FE74222B4200000DD280 /* Question View Controller.swift */,
 				99A4FE76222B4236000DD280 /* Answer View Controller.swift */,
 				99A4FE78222B426C000DD280 /* Results View Controller.swift */,
-				99A4FE7E222B4A98000DD280 /* fa-regular-400.ttf */,
 			);
 			path = iQuiz;
+			sourceTree = "<group>";
+		};
+		99A4FE87222B5490000DD280 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				99A4FE89222B54AF000DD280 /* fontawesome */,
+				99A4FE88222B54A2000DD280 /* img */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		99A4FE88222B54A2000DD280 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				99A4FE8A222B5767000DD280 /* marvel.jpg */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		99A4FE89222B54AF000DD280 /* fontawesome */ = {
+			isa = PBXGroup;
+			children = (
+				99A4FE7E222B4A98000DD280 /* fa-regular-400.ttf */,
+			);
+			path = fontawesome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99509AF02228737900691E4E /* LaunchScreen.storyboard in Resources */,
+				99A4FE8B222B5767000DD280 /* marvel.jpg in Resources */,
 				99A4FE7C222B4A98000DD280 /* fa-regular-400.ttf in Resources */,
 				99509AED2228737900691E4E /* Assets.xcassets in Resources */,
 				99509AEB2228737500691E4E /* Main.storyboard in Resources */,
