@@ -196,7 +196,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="submitAnswer:" destination="Qvo-Vj-Pbp" eventType="touchUpInside" id="D0w-Cs-3cU"/>
-                                    <segue destination="1Kf-jc-4Av" kind="presentation" identifier="toAnswer" id="0Ca-wN-Z1Q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -231,6 +230,7 @@
                         <outlet property="answer2" destination="QGk-zy-pwQ" id="FpW-jw-ZZc"/>
                         <outlet property="answer3" destination="P2h-y2-p6s" id="XiI-UO-XFi"/>
                         <outlet property="questionLabel" destination="aLI-oz-9fO" id="y9b-ml-2or"/>
+                        <segue destination="1Kf-jc-4Av" kind="presentation" identifier="toAnswer" id="Hgc-OX-rDW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaQ-w8-4Xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -271,7 +271,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextPressed:" destination="1Kf-jc-4Av" eventType="touchUpInside" id="iwQ-Kd-UOf"/>
-                                    <segue destination="JCe-P5-ZjD" kind="presentation" identifier="toResult" id="Znk-3f-LFd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVU-UM-QUj">
@@ -352,11 +351,8 @@
                         <outlet property="QuestionLabel" destination="mVU-UM-QUj" id="vVm-FA-f17"/>
                         <outlet property="ResultLabel" destination="cIr-eu-9x9" id="qu3-pL-55i"/>
                         <outlet property="UserAnswerLabel" destination="5eX-dq-Q6G" id="7Rn-J1-TNe"/>
-                        <outlet property="correctAnswerLabel" destination="Ggy-YO-ZbD" id="5yS-W9-qvB"/>
-                        <outlet property="nextButton" destination="dQV-TE-4ph" id="pCk-Lo-ime"/>
-                        <outlet property="questionLabel" destination="mVU-UM-QUj" id="UP3-CN-27t"/>
-                        <outlet property="resultLabel" destination="cIr-eu-9x9" id="pGF-Y4-mGr"/>
-                        <outlet property="userAnswerLabel" destination="5eX-dq-Q6G" id="B5j-wd-veC"/>
+                        <segue destination="Qvo-Vj-Pbp" kind="presentation" identifier="toQuestion" id="CqW-9F-z6b"/>
+                        <segue destination="JCe-P5-ZjD" kind="presentation" identifier="toResult" id="zR3-fK-S89"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xRG-3J-hHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -439,8 +435,6 @@
                     <connections>
                         <outlet property="FeedbackMsg" destination="tVG-zd-P66" id="G3h-ub-fsb"/>
                         <outlet property="FinalScoreLabel" destination="nCT-hj-Nwf" id="0fM-hs-fA4"/>
-                        <outlet property="finalScoreLabel" destination="nCT-hj-Nwf" id="hdK-y1-TN6"/>
-                        <outlet property="msgLabel" destination="tVG-zd-P66" id="bWv-58-mmX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdl-QJ-aIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -448,4 +442,7 @@
             <point key="canvasLocation" x="2681" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="CqW-9F-z6b"/>
+    </inferredMetricsTieBreakers>
 </document>
