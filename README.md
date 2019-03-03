@@ -12,3 +12,4 @@ iQuiz: __A Multiple-Choice Q-and-A application__
 
 -----------
 Author: Rhea Chen
+With the help of my fellow classmates
